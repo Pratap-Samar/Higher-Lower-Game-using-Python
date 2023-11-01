@@ -1,7 +1,7 @@
 import random
 
 #welcome and rules
-print("welcome to the Higher-Lower game \nrule of the games are: \nThe computer will give you random number \nYou will have to guess if the next generated number will be higher or lower than the given number\nAfter each correct guess you get 5 points and it's game over if your guess is wrong \n\n\n")
+print("welcome to the Higher-Lower game \nThe Rules of the game are: \nThe computer will give you random number \nYou will have to guess if the next generated number will be higher or lower than the given number\nAfter each correct guess you get 5 points and it's game over if your guess is wrong \n\n\n")
 
 #points tracking
 point=0
