@@ -28,8 +28,8 @@ while game=="Y":
     else:
         print('invalid input')
         pass
-#to keep the going on
-    a=input("\n\nType Y to continue the game(Y)?")
+#to keep the game going on
+    a=input("\n\nTo continue the game type (Y)")
     if a=='Y' or a=='y':
         game=="Y"
     else:
