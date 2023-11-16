@@ -6,21 +6,21 @@ print("welcome to the Higher-Lower game \nThe Rules of the game are: \nThe compu
 #points tracking
 point=0
 
-#Game begains
-game="Y"or'y'
+#Game begins
+game="Y"
 while game=="Y":
     num1=random.randint(0,100)
     print("\nThe generated number is", num1)
-    print("\ntype 'H' for Higher and 'L' for Lower")
-    Guess=input("will the next number be Higher or Lower:")
+    print("\nType 'H' for Higher and 'L' for Lower")
+    Guess=input("will the next number be Higher or Lower:").upper()
     
     num2=random.randint(0,100)
-    print('\n\nnext number is',num2)
+    print('\n\nNext number is',num2)
         
     if num2>num1 and Guess=='H'or num1>num2 and Guess=='L':
-        print("congratulation you got 5 points")
+        print("Congratulation you got 5 points")
         point=point+5
-        print('your point is', point)
+        print('Your point is', point)
 
     elif num2<num1 and Guess=='H'or num1<num2 and Guess=='L':
         print("oops wrong guess")
@@ -28,9 +28,9 @@ while game=="Y":
     else:
         print('invalid input')
         pass
-#to keep the game going on
-    a=input("\n\nTo continue the game type (Y)")
-    if a=='Y' or a=='y':
+#to keep the going on
+    a=input("\n\nType Y to continue the game(Y)?").upper()
+    if a=='Y':
         game=="Y"
     else:
         break
